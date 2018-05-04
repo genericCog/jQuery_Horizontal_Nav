@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Div-as-Button Navigation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--<cfset room_id_cf="">-->
+<div data-nav="main_flexbox" class="main-flexbox">
+    <div id="left_flexbox" data-nav="left_flexbox" class="left-flexbox">
+        <div id="nav_calendar" data-nav="nav_calendar" class="nav_flex_child dz_container_normal">Calendar</div>
+        <div id="nav_room_details" data-nav="nav_room_details" class="custom_border nav_flex_child dz_container_normal">Details</div>
+        <div id="nav_room_search" data-nav="nav_room_search" class="custom_border nav_flex_child dz_container_normal">Search</div>
+        <div id="nav_help" data-nav="nav_help" class="custom_border nav_flex_child dz_container_normal">Help</div>    
+    </div><!---END left_flexbox--->
+    
+    <div id="right_flexbox" data-nav="right_flexbox" style="width:50%;display:flex;flex-flow:row wrap;justify-content:flex-end;">
+        <!--<cfif structKeyExists(form, "room_id") and form.room_id NEQ 'addroom'>
+            <cfset room_id_cf = "#form.room_id#">
+            <cfoutput>
+                <div id="nav_room_details_edit" data-nav="nav_room_details_edit" class="nav_flex_child dz_container_normal">Edit Details</div>
+            </cfoutput>
+        <cfelse>
+            <cfset room_id_cf = "">
+        </cfif>-->
+        <div id="nav_add_room" data-nav="nav_add_room" class="nav_flex_child dz_container_normal">Add New</div>
+        <div id="nav_requests" data-nav="nav_requests" class="custom_border nav_flex_child dz_container_normal">View All</div>        
+    </div><!---END right_flexbox--->
+
+</div><!---END main_flexbox--->
+<h2>Navigation</h2>
+<p>
+  This example demonstrates the use of jQuery, Flexbox, and Div elements to create a horizontal navigation system.
+  <br>
+  This label changes on click event: <label data-nav="label_status">Waiting...</label>
+</p>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

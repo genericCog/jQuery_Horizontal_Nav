@@ -1,0 +1,53 @@
+[data-nav="label_status"]{border:1px solid red;}
+.nav_flex_child {
+    padding: 2px 4px;
+    min-width: 135px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dz_container_normal {
+    cursor: auto;
+    color: rgba(216, 227, 247, 1.00);
+    background-color: #555;
+    transition: background-color 0.5s ease, border 0.5s ease;
+    transition: color 0.5s ease, border 0.5s ease;
+}
+.custom_border {
+  border-left: 0px solid red;
+  position: relative;
+}
+.custom_border:after {
+  padding:0;
+  margin:0;
+  content: "";
+  width: 1px;
+  height: 18px;
+  background-color:rgba(107,107,107,1.00);
+  position: absolute;
+  left:-1px;
+  /*top: -10px;*/
+}
+.dz_over {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+.main-flexbox {
+    background-color: #555;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,.5));
+}
+
+.left-flexbox {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
